@@ -15,6 +15,8 @@
 
 .list {
     list-style: none;
+    padding: 0;
+    margin: 0;
 }
 .link {
     text-decoration: none;
@@ -30,6 +32,12 @@ body {
 button {
  cursor: pointer;
  font-family: inherit;
+}
+ 
+.container{
+    width: 1440px;
+    height: 72px;
+    border: 1px solid green;
 }
 
 .logo {
@@ -49,11 +57,37 @@ button {
 }
 
 /*------- site-nav */
+.main-nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+ margin-left: 156px;
+ margin-right: 76px;
+}
+
+.site-nav{
+    display: flex;
+    margin-left: 40px;
+    
+}
+
+/* .site-nav .item {
+    background-color: tomato;
+} */
+
+.site-nav .item:not(:last-child) {
+    margin-right: 40px;
+}
 .site-nav .link {
     color: var(--navy-blue);
         font-weight: 500;
         font-size: 16px;
         line-height: 1.5;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -63,7 +97,30 @@ button {
     color: var(--iris);
 }
 /*------- adress */
+.adress{
+        display: flex;
+}
+
+.navadress{
+    margin-left: auto;
+}
+
+/* .adress .item{
+    background-color: green;
+} */
+
+.adress .item:not(:last-child){
+    margin-right: 40px;
+}
+.adress .item:last-child {
+    margin-right: 156px;
+}
+
 .adress .link {
+    display: block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
     color: var(--slate);
     font-style: normal ;
 }
