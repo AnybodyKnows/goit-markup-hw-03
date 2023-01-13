@@ -1,0 +1,182 @@
+
+
+/* ------Var----------*/
+
+:root {
+    --navy-blue: #2E2F42;
+    --slate: #434455;
+    --iris: #4D5AE5;
+    --bgc-white: #ffffff;
+    --bgc-nav: #2E2F42;
+    --cloud: #F4F4FD;
+    
+}
+
+
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+/* -------------body and logo */
+body {
+    font-family: Roboto, sans-serif;
+    color: var(--navy-blue) ;
+    background-color:var(--bgc-white);
+}
+
+button {
+ cursor: pointer;
+ font-family: inherit;
+}
+
+.logo {
+    font-family: 'Raleway';
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 1.33;
+        color: var(--navy-blue);
+        text-transform: uppercase;
+}
+
+
+
+.logo-web {
+    color: var(--iris);
+
+}
+
+/*------- site-nav */
+.site-nav .link {
+    color: var(--navy-blue);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+}
+.site-nav .link:hover,
+.site-nav .link:focus {
+    color: var(--slate);
+}
+.site-nav .link:active {
+    color: var(--iris);
+}
+/*------- adress */
+.adress .link {
+    color: var(--slate);
+    font-style: normal ;
+}
+.adress .link:hover,  
+.adress .link:focus {
+    color: var(--iris)
+}
+
+/* ---------------hero */
+.hero {
+    background-color: var(--bgc-nav);
+}
+.hero-title {
+        font-size: 56px;
+        line-height: 1.07;
+        letter-spacing: 0.02em;
+        color: var(--bgc-white);
+}
+.index-hero-btn {
+    background-color: var(--iris);
+    color: var(--bgc-white);
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        align-items: center;
+        letter-spacing: 0.04em;
+}
+
+.index-hero-btn:hover,
+.index-hero-btn:focus
+.index-hero-btn:active {
+    background-color: var(--cloud);
+    color: var(--iris)
+;
+}
+
+
+
+/* -----------------section */
+.section-team {
+    background-color: var(--cloud);
+}
+.section-h3 {
+    font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2px;
+        letter-spacing: 0.02em;
+}
+.section-text {
+        font-size: 16px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        color: var(--slate);
+}
+
+/* Section What are we doing*/
+.section-h2{
+    text-transform: capitalize;
+}
+
+
+
+footer {
+ background-color: var(--navy-blue)
+}
+.footer-text {
+        font-size: 16px;
+        line-height: 1.15;
+        letter-spacing: 0.02em;
+        color: var(--bgc-white);
+}
+.footer-logo {
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    color: var(--cloud);
+    text-transform: uppercase;
+    text-decoration: none;
+
+}
+
+/* ---------Portfolio */
+.pictures-portfolio h3 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: var(--navy-blue);
+}
+.pictures-portfolio p {
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;    
+        color: var(--slate);
+}
+
+.pictures-portfolio a{
+    text-decoration: none;
+}
+
+.hero-btn {
+    background-color: var(--cloud);
+    color: var(--iris);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    align-items: center;
+    letter-spacing: 0.04em;
+}
+
+.hero-btn:hover,
+.hero-btn:focus .hero-btn:active {
+    background-color: var(--iris);
+    color: var(--bgc-white);
+}
