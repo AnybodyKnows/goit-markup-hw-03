@@ -11,16 +11,30 @@
     --cloud: #F4F4FD;
     
 }
+/* ------Var----------*/
 
-
+/* ---------Утилиты */
+h1{
+    margin: 0;
+} 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
 .list {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 .link {
     text-decoration: none;
 }
+/* ----------------Утилиты */
+
+
+
 
 /* -------------body and logo */
 body {
@@ -35,9 +49,12 @@ button {
 }
  
 .container{
-    width: 1440px;
-    height: 72px;
+    width: 1098px;
     border: 1px solid green;
+padding-left: 15px;
+padding-right: 15px;
+margin: 0 auto;
+
 }
 
 .logo {
@@ -62,10 +79,7 @@ button {
     align-items: center;
 }
 
-.logo {
- margin-left: 156px;
- margin-right: 76px;
-}
+
 
 .site-nav{
     display: flex;
@@ -112,9 +126,7 @@ button {
 .adress .item:not(:last-child){
     margin-right: 40px;
 }
-.adress .item:last-child {
-    margin-right: 156px;
-}
+
 
 .adress .link {
     display: block;
@@ -132,12 +144,17 @@ button {
 /* ---------------hero */
 .hero {
     background-color: var(--bgc-nav);
+    text-align: center;
+}
+.hero-box{
+    width: 500px;
 }
 .hero-title {
         font-size: 56px;
         line-height: 1.07;
         letter-spacing: 0.02em;
         color: var(--bgc-white);
+        margin-bottom: 48px;
 }
 .index-hero-btn {
     background-color: var(--iris);
