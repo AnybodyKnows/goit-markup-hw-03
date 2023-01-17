@@ -48,7 +48,7 @@ button {
 
 .container {
   width: 1160px;
-  /* outline : 1px solid green; */
+  outline: 1px solid green;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -79,7 +79,9 @@ button {
 
 .site-nav {
   display: flex;
-  margin-left: 40px;
+}
+nav {
+  margin-left: 76px;
 }
 
 /* .site-nav .item {
@@ -94,8 +96,8 @@ button {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   display: block;
 }
 .site-nav .link:hover,
@@ -124,8 +126,9 @@ button {
 
 .adress .link {
   display: block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  line-height: 1.5;
 
   color: var(--slate);
   font-style: normal;
@@ -178,12 +181,16 @@ button {
   display: flex;
 }
 
-.values-items .item:not(:last-child) {
-  margin-right: 24px;
+.value-item {
+  flex-basis: calc((100% - 24px * 3) / 4);
 }
 
-.div-values {
-  margin-top: 120px;
+.section {
+  padding-top: 120px;
+}
+
+.values-items .item:not(:last-child) {
+  margin-right: 24px;
 }
 
 .section-team {
@@ -209,13 +216,23 @@ button {
   text-transform: capitalize;
   margin-bottom: 72px;
   text-align: center;
+  font-weight: 700;
 }
 
 .section-doing .section-h2 {
   text-transform: capitalize;
   margin-bottom: 72px;
   text-align: center;
-  margin-top: 120px;
+  font-weight: 700;
+}
+
+.section-doing {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-doing img {
+  display: block;
 }
 
 .list-doing {
@@ -224,7 +241,6 @@ button {
 }
 
 .section-team {
-  margin-top: 120px;
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -234,9 +250,15 @@ button {
   justify-content: space-between;
 }
 
+.team-name {
+  padding: 32px 16px;
+  text-align: center;
+}
+
 footer {
   background-color: var(--navy-blue);
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 .footer-text {
   width: 264px;
@@ -257,7 +279,6 @@ footer {
   margin-bottom: 16px;
 }
 .footer {
-  padding-top: 100px;
 }
 
 /* ---------Portfolio */
